@@ -1,0 +1,250 @@
+/* Css resets */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Css veriable */
+:root{
+    --navbar-height:50px;
+}
+
+/* Navigation */
+#navbar{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+/* Navigation: logo */
+#logo{
+    margin: 8px 30px;
+}
+#logo img{
+    height: 90px;
+    /* filter: invert(100%); */
+}
+
+/* Navigation: list and styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.8rem;
+    margin: 4px 10px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 3px 20px;
+    color: whitesmoke;
+    display: block;
+    transition: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    color: black;
+    
+}
+#navbar ul li a:hover{
+    background-color:black;
+    color: white;
+    border-radius: 9px;
+    box-shadow: 4px 4px 4px white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 290px;
+    text-align: center;
+    height: 310px;
+}
+#home h1{
+    margin: 10px 2px;
+    font-size: 1.9rem;
+    
+}
+#home p{
+    font-size: 1.2rem;
+
+}
+#home::before{
+    content: "";
+    background: url('bike (3).jpg') no-repeat center center/cover ;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;
+}
+.btn{
+    display: block;
+    width: 90px 100px;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 2px 25px;
+    font-size: 0.9rem;
+    transition: all;
+    transition-duration: 2s;
+    box-shadow: 4px 4px 4px black;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 4px 4px 4px white;
+    padding: 2px 30px;
+}
+
+/* services section */
+
+#services{
+    display: flex;
+    margin: 30px;
+}
+#services .box{
+border: 2px solid black;
+justify-content: center;
+padding: 9px 25px;
+margin: 9px;
+border-radius: 10px;
+background: url('bike (9).jpg') ;
+box-shadow: 9px 9px 10px black;
+}
+#services .box img{
+    height: 110px;
+    display: block;
+    margin:  20px auto;
+
+}
+#services-container h1{
+    font-size: 2.8rem;
+    color: black;
+}
+/* clients section */
+#client-section{
+    position: relative;
+    height: 300px;
+}
+#client-section h1{
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    opacity: 0.4;
+    font-weight: bold;
+}
+#client-section::before{
+    content: "";
+    background: url('bike (2).jpg')  ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-item{
+    padding: 12px;
+}
+.client-item img{
+    height: 150px;
+}
+
+/* contact section */
+#contact-section{
+    position: relative;
+    margin-top: 30px;
+}
+#contact-section h1{
+    margin-bottom: 30px;
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+}
+#contact-section::before{
+    content: "";
+    background: url('bike (9).jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact .form{
+    width: 360px;
+    margin: 15px 0px;
+}
+#contact label{
+    font-size: 1.4rem;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#contact input,
+#contact textarea{
+    text-align: center;
+width: 100%;
+padding: 5px 30px;
+border-radius: 6px;
+box-shadow: 8px 8px 6px black;
+transition: all;
+transition-duration: 2s;
+transition-timing-function: ease-in-out;
+}
+#contact input:hover,
+#contact textarea:hover{
+background-color: black;
+color: white;
+box-shadow: 6px 6px 4px white;
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    height: 30px;
+}
+   
+
+
+/* utlity classes */
+.center{
+    text-align: center;
+}
+.h-primary{
+    font-size: 1.7rem;
+}
+.h-secondary{
+    font-size: 1.6rem;
+    text-align: center;
+}
